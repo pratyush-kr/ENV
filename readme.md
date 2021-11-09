@@ -1,4 +1,4 @@
-###DataBase
+# Database
 
 These are the required tables for sucessful implementation of this Project!
 
