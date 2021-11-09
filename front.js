@@ -4,6 +4,6 @@ function openForm(){
     document.getElementById("form").style.display = "flex";
 }
 
-function closeForm(event){
+function closeForm(){
     document.getElementById("form").style.display = "none";
 }
