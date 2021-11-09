@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plant Tree</title>
     <link rel="stylesheet" href="index.css">
+    <script src="front.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="top">
             <div><img src="src/plant.png"></div>
             <div>Plants</div>
-            <div><button>Login</button></div>
+            <div><button id="ShowForm" onclick="openForm();">Login</button></div>
+        </div>
+        <div id="form">
+            <form class="myform" action="https://localhost/login">
+                <input type="text" placeholder="username or email" id="name">
+                <br>
+                <br>
+                <input type="password" placeholder="password" id="pass">
+                <br>
+                <button type="submit">Submit</button>
+                <input class="Cancel" type="button" onclick="closeForm();" value="Cancel"/>
+            </form>
         </div>
     </div>
 </body>
