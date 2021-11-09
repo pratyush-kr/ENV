@@ -123,3 +123,20 @@ body{
 .cancel:active{
     transform: translate3d(2px, 2px, 2px);
 }
+
+
+#plant-location{
+    height: 25px;
+    width: 210px;
+    border: none;
+    border-radius: 25px;
+}
+
+#postPlant{
+    height: 25px;
+    width: 90px;
+    background-color: chartreuse;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+}
