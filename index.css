@@ -78,4 +78,33 @@ body{
 .myform > button{
     height: 15px;
     width: 70px;
+    border-radius: 25px;
+    background-color: greenyellow;
+    border: none;
+    cursor: pointer;
+}
+
+.myform > button:hover{
+    background-color: rgb(115, 190, 2);
+}
+
+.myform > button:active{
+    transform: translate3d(-2px, 2px, -2px);
+}
+
+.cancel{
+    height: 15px;
+    width: 70px;
+    background-color: rgb(253, 85, 85);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.cancel:hover{
+    background-color: rgb(194, 33, 33);
+}
+
+.cancel:active{
+    transform: translate3d(2px, 2px, 2px);
 }
