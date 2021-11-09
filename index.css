@@ -130,13 +130,39 @@ body{
     width: 210px;
     border: none;
     border-radius: 25px;
+    margin-left: auto;
 }
 
 #postPlant{
+    margin-top: 4px;
     height: 25px;
     width: 90px;
     background-color: chartreuse;
     border-radius: 25px;
     cursor: pointer;
     border: none;
+}
+
+#postPlant:hover{
+    background-color: rgb(89, 172, 6);
+}
+
+#postPlant:active{
+    transform: translateY(2px);
+}
+
+#add-plant-to-db{
+    display: grid;
+    grid-template-rows: 50px 98px;
+    height: 150px;
+    gap: 2px;
+}
+
+#add-plant-to-db > :nth-child(1){
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+}
+#add-plant-to-db > :nth-child(2){
+    justify-self: center;
 }
