@@ -15,4 +15,5 @@ app.listen(3000, function(){
 app.post('/login', function(req, res){
     console.log(req.body.name);
     console.log(req.body.password);
+    res.status(200).send("{Data Recieved}");
 });

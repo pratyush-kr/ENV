@@ -14,8 +14,6 @@ function handelSubmit(event){
     var pass = document.getElementById('pass').value;
     const data = {"name": name, "password": pass};
     const https = new XMLHttpRequest();
-    const url = 'localhost:3000/login'
-    $.post(url, data, function(status){
-        console.log(status);
-    });
+    const url = 'http://localhost:3000/login'
+    $.post(url, data);
 }
