@@ -10,4 +10,4 @@ These are the required tables for successful implementation of this Project!
 
 <ins>Bank</ins> has {Unique ID : ref <ins>Peoples</ins>, <ins>Transactions</ins>, account number}  
 
-<ins>Transactions</ins> has {[<ins>account no</ins>(from), <ins>account no</ins>(to)] : ref <ins>Bank</ins>, ammount, date}
+<ins>Transactions</ins> has {[account no(from), account no(to)] : ref <ins>Bank</ins>, ammount, date}
