@@ -16,11 +16,11 @@
             <div><button id="ShowForm" onclick="openForm();">Login</button></div>
         </div>
         <div id="form">
-            <form class="myform" action="https://localhost/login" method="get">
+            <form class="myform" id="myLoginForm">
                 <input type="text" placeholder="username or email" id="name" required>
                 <input type="password" placeholder="password" id="pass" required>
                 <div>
-                    <button class="submit" type="submit">Login</button>
+                    <button class="submit" type="submit" onclick="handelSubmit(event);">Login</button>
                     <input class="cancel" type="button" onclick="closeForm();" value="Cancel"/>
                 </div>
             </form>
