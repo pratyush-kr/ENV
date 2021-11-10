@@ -10,7 +10,12 @@ function closeForm(){
 
 function handelSubmit(event){
     event.preventDefault();
-    var myForm = document.getElementById('myLoginForm');
-    const data = new FormData(myForm);
-    console.log(data);
+    var name = document.getElementById('name').value;
+    var pass = document.getElementById('pass').value;
+    const data = {"name": name, "password": pass};
+    const https = new XMLHttpRequest();
+    const url = 'localhost:3000/login'
+    $.post(url, data, function(status){
+        console.log(status);
+    });
 }

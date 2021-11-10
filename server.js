@@ -3,12 +3,16 @@ var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
-var db = mongoose.connect("mongoose://localhost/PlantDB");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
-app.listen(7870, function(){
+var db = mongoose.connect("mongodb://localhost/PlantDB");
+
+app.listen(3000, function(){
     console.log("Server is up and running");
 });
 
 app.post('/login', function(req, res){
-    var form = document.getElementById('form');
+    console.log(req.body.name);
+    console.log(req.body.password);
 });
